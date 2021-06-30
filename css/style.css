@@ -25,10 +25,58 @@ ul li {
 .navbar__container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
+}
+.navbar__logo {
+  font-size: 40px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.navbar__logo span {
+  color: crimson;
+}
+.navbar__icon {
+  color: white;
 }
 .navbar__link {
   margin-left: 20px;
+  font-size: 20px;
+  color: white;
+}
+.navbar__link:hover {
+  color: crimson;
+}
+
+.home {
+  background: url("../images/1.png") no-repeat center;
+  height: 100vh;
+  color: white;
+}
+.home__title {
+  font-size: 55px;
+  margin: 30px 0 20px;
+}
+.home__title span {
+  color: crimson;
+}
+.home__subtitle {
+  margin-top: 120px;
+  font-size: 30px;
+}
+.home__link {
+  font-size: 18px;
+  line-height: 12px;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 30px;
+  border-radius: 40px 10px 40px 10px;
+}
+.home__link svg {
+  color: white;
+}
+
+form {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
