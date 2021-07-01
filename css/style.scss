@@ -7,11 +7,13 @@
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
-img{
+
+img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -126,18 +128,21 @@ ul li {
       text-align: left;
     }
   }
-  &__title{
+
+  &__title {
     color: #99EFD0;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  &__services{
+
+  &__services {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
-  &__item{
+
+  &__item {
     flex-basis: 80%;
     display: flex;
     justify-content: center;
@@ -150,7 +155,8 @@ ul li {
     background-size: cover;
     z-index: 1;
     position: relative;
-    &:after{
+
+    &:after {
       position: absolute;
       content: "";
       top: 0;
@@ -161,7 +167,8 @@ ul li {
       opacity: .4;
       z-index: -2;
     }
-    &__icon{
+
+    &__icon {
       height: 80px;
       width: 80px;
       margin-top: 20px;
@@ -169,11 +176,12 @@ ul li {
     }
 
   }
-&__bottom{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-}
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
 }
 
 .section__title {
@@ -188,13 +196,66 @@ ul li {
     color: crimson;
   }
 }
-.project{
+
+.project {
   padding: 100px 0;
-  &__all{
+  text-align: center;
+  background: linear-gradient(222.26deg, #3B1D6050 1.22%, #040D3E50 106.28%);
+
+  z-index: -1;
+  &__container{
+    z-index: 99;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    flex-basis: 50%;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+      opacity: .7;
+    }
+  }
+
+  &__all {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 50px;
+  }
+
+  &__item {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+       overflow: hidden;
+    border-radius: 10px;
+    &:hover .project__img{
+      transform: scale(1.1);
+    }
+  }
+
+  &__info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #8fd3f4;
   }
 }
 

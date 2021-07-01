@@ -176,12 +176,59 @@ ul li {
 
 .project {
   padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(222.26deg, #3B1D6050 1.22%, #040D3E50 106.28%);
+  z-index: -1;
+}
+.project__container {
+  z-index: 99;
+}
+.project__img {
+  width: 100%;
+  height: 100%;
+  flex-basis: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.project__img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: 0.7;
 }
 .project__all {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 50px;
+}
+.project__item {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.project__item:hover .project__img {
+  transform: scale(1.1);
+}
+.project__info {
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #8fd3f4;
 }
 
 .particles {
