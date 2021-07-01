@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 <body>
 <section class="header">
@@ -16,11 +17,9 @@
             </div>
             <ul class="header__menu">
                 <li><a class="header__link" href="#home">Home</a></li>
-                <li><a class="header__link" href="#about">About</a></li>
-                <li><a class="header__link" href="#">Services</a></li>
-                <li><a class="header__link" href="#">Skills</a></li>
-                <li><a class="header__link" href="#">Teams</a></li>
-                <li><a class="header__link" href="#">Contact</a></li>
+                <li><a class="header__link" href="#services">Skills</a></li>
+                <li><a class="header__link" href="#project">Projects</a></li>
+                <li><a class="header__link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -28,7 +27,7 @@
 <section id="home" class="home">
     <div class="home__container container">
         <div id="particles" class="particles"></div>
-       <div class="home__grid">
+        <div class="home__grid">
             <div class="home__box">
                 <h3 class="home__subtitle">Hello, I Am Kunduz Rakhat <span></span></h3>
                 <h1 class="home__title"> Beginner <span>Web Developer</span><span></span></h1>
@@ -58,10 +57,25 @@
         <div class="services__bottom">
             <div class="services__item">
                 <div class="services__icon">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABbElEQVRIS92W/TEEQRBH30WACBABGSACMiAEIkAGREAGiAARIAMiIAPqqRnVtzs7O1enVpX9Z7eup/p1//pjbsZEz2wiDn8KOgIOl8z0BTiOPkoZHQA3S4Iegd0xkAfulwTdAQb885Qy+g3QOXA2BtL+mQ71JKhkquPTZF8Y9AGsNcoYQSfARUtGAlbSwSzvA7DTCN0DPF+tkcbodDJQjm4bWK1kpFRbyb4JvLZkdAvsp4M9GQZgOl7vyD0qXSzsdTe6AHoDtMdO9bs3NkO7LoJ0ZrTKlqXJrNj+eSRcP8o89wyB3HdXnZkoDXIG6fipNntDoOj0Mi3IjfTW5redaQP4jueLQ94CatkOEdTbCsWipfStx3sQ2ajtRKHP6XezcoCF5Cw1LQTqdlEsrFvD5ugVvFPTpmaogSoz+20qzl3tKjdiJfFeGdtxjoDSZol7wbT+Z7BmGerbDeDllh3PrZtSyq2gMblG7f8P9AUQKk0bDEkwZwAAAABJRU5ErkJggg=="/>
+                    <img src="./images/kisspng-html-web-design-scalable-vector-graphics-world-wid-html5-icon-hd-5ab0c85c377aa0.0639325615215350682273.png">
                 </div>
                 <h3 class="services__title">
-                  HTML
+
+                </h3>
+                <p class="services__desk services__desk-small">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ipsa, quam. Consectetur dolor,
+                    dolore et ipsam libero quis quo veniam!a
+                </p>
+
+
+            </div>
+            <div class="services__item">
+                <div class="services__icon">
+                    <img src="./images/kisspng-responsive-web-design-bootstrap-sass-cascading-sty-framework-5acb894bc4c191.9841223815232883958059.png"
+                         alt="">
+                </div>
+                <h3 class="services__title">
+
                 </h3>
                 <p class="services__desk services__desk-small">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ipsa, quam. Consectetur dolor,
@@ -70,23 +84,12 @@
             </div>
             <div class="services__item">
                 <div class="services__icon">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAACDklEQVRIS72W4TEEQRCF30WACBABIkAEiAARkAEiQASI4IjAiQARIAJEQH1T01t9vTM7y4/rqq3d2pnp16/7de9OtCCbLAhHY4HWJO1J2pTEs9lM0oOkl1bALSAcX0raaTh6l3Qu6a62bwjoNIO0gvXrMNuV9BUP1YBuJR1WEEjVfb68w31JV5J+MhgsOysB1ZgAwBoOSKXVDGcAXue1t1yzOWYRiJo8BybfkoiWwnOnZl4Qtp0A1jMj3gFMYMkiEM62HdBHjp6Ipw1RwPhI0qc7D3BKoQciSmibwcTU9ihpeUAVthfGZ25fx8oDxdpcZMmipI0BkNfMhLTfhH2c3YqMotIoJrQ9SyKEGexxQqq5YNHVI4AlMp5RrI8xoj5L7jAAyBtAWLSaOdVpCAgAWJVS8pcmxsdsCMj64yB7hYVnNhaslzpmlVeMd8Qa8uVuBtPVBhpqTGr1jMg1Mi4ZykK6pBMwxoz1TW1U4YchS2/1GhaVxSgRBWmjYX3nc5411FZLaapPCQh03wsGAlPYkwbYmMGKSVJq5ievyNJQ9Q3KOmwYoMfZuw+EvdSqZDRq90EsAREdKSQdK7k5qQ3vW6PIAAmKAdBZ7XtE58OEAUmOiRoxjLEeSKlG3hEMUNjJGO+SqAnCKP4/tP4ZwIAdDpB/HK70CcxJU1JXzcYAxbMAcw06jof+AzQyk/PbfgGwAnMbdJ73xgAAAABJRU5ErkJggg=="/>
-                </div>
-                <h3 class="services__title">
-                SASS
-                </h3>
-                <p class="services__desk services__desk-small">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ipsa, quam. Consectetur dolor,
-                    dolore et ipsam libero quis quo veniam!a
-                </p>
-            </div>
-            <div class="services__item">
-                <div class="services__icon">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABEklEQVRIS+2WYW0CQRCFPxSAg9YBRQGtAyQUBYACcAB10DoABS0OwAEooCiAfMkcuVxCyB4bCAnzZ5PdvffmvZnZXIMbReNGPNyNaAa0M6r8KLCqiv6AbkaiE/6TKNXVp3Wpjp3uP4Z1P8AGGEfea8BBd68HfALNOLtKkdPuYB+APfAK/JfMfQd+cxMtAYGHwDSUqUpyI5uiRdj1FiTV5ysbkVn3ge9QoLryw5yVSA6JvoAV0Ir1Jad1kmwBQY1RKJpEVyYpEsiWtcjWwtXYlWxTkQ2gbfNYB6mKnI9OpYWLLhPUGpXb22Rsby1MUmT2kgkqoJmrsAj3nCvrUz1LJqr72J0lqgt48bu7/QVdzKzuhSMTbEgbEseoIwAAAABJRU5ErkJggg=="/>
+                    <img src="./images/kisspng-logo-scalable-vector-graphics-computer-icons-porta-sass-logos-download-5c59c780d82aa0.0178421215493876488854.png"
+                         alt="">
 
                 </div>
                 <h3 class="services__title">
-                  Javascript
+
                 </h3>
                 <p class="services__desk services__desk-small">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ipsa, quam. Consectetur dolor,
@@ -95,10 +98,11 @@
             </div>
             <div class="services__item">
                 <div class="services__icon">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABP0lEQVRIS8WWgTHFQBCGv1cBHaACOkAFdEAHdIAKUAE6oAJUQAlUgA7MZ+7eZHbujItL3s28Seblsl/+3X83WTDTWszEYaWgdeAI2AM8b12vwB3gcbmiIgM/Ajut0Qv794Gn/H8EnQKXHSCGeAO2aqB74KATyDBLIVGRUncD6B24LcA3AX9xf7E0fwE9J2PUhFpPH3CtsKFJUQYZcFi/T+AiuescOOsF0u46crgegMOkOF5rrlFWVAKpSDVdFVn444Ec7atJVHRTae5RNaqZwQewLbanrJFucwI4UT6mBBk7jxpnW1Q1KnUlM3ylptXq3UDRDKrRDJrCHnvplbqaGXSijVx6pTSlLqclgvKs+20GV0FXwMkc07uW6zHsa8D3288qfTPoLou8MSZ6ukeIY8m0V0H/iF+/daVfQZMo+ga470cbafUPYwAAAABJRU5ErkJggg=="/>
+                    <img src="./images/kisspng-javascript-logo-html-clip-art-javascript-logo-5b5188b1a2a1f9.2428698915320700656662.png"
+                         alt="">
                 </div>
                 <h3 class="services__title">
-                BootStrap
+
                 </h3>
                 <p class="services__desk services__desk-small">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ipsa, quam. Consectetur dolor,
@@ -126,7 +130,9 @@
                         consectetur consequatur eius inventore libero nobis quidem rerum sint unde.</p>
                 </div>
                 <div class="project__img">
-                    <img src="./images/photo-1554415707-6e8cfc93fe23.jpg" alt="">
+                    <a href="https://github.com/Kunduz-rahat/growbe/settings/pages">
+                        <img src="./images/7NRC13Rk.jpg" alt="">
+                    </a>
                 </div>
             </div>
             <div class="project__item">
@@ -179,6 +185,30 @@
 
     </div>
 </section>
+<footer id="contact" class="footer">
+    <div class="container footer__container">
+        <div class="footer__number">
+            <a class="footer__number-number" href="tel:+996 704 414333"> +996 704 414 333</a>
+        </div>
+        <div class="footer__socials">
+            <a href="#" class="fab fa-facebook-f footer__links"></a>
+            <a href="#" class="fab fa-twitter footer__links"></a>
+            <a href="#" class="fab fa-instagram footer__links"></a>
+        </div>
+        <div class="footer__link">
+            <input type="text" placeholder="Введите ваш e-mail">
+            <button class="footer__link-btn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V12.5068H3.47462L3.47332 17.8229L8.80067 12.5068H17.9999V0H0Z" fill="white"/>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>&copy;2021 Kunduz Rakhat</p>
+    </div>
+</footer>
 </body>
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 <script src="./js/particle.min.js"></script>
